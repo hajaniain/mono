@@ -17,6 +17,9 @@
     "ng-mono-e2e": {
       "tags": [],
       "implicitDependencies": ["ng-mono"]
+    },
+    "core": {
+      "tags": []
     }
   }
 }
