@@ -1,0 +1,22 @@
+{
+  "npmScope": "mono",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "ng-mono": {
+      "tags": []
+    },
+    "ng-mono-e2e": {
+      "tags": [],
+      "implicitDependencies": ["ng-mono"]
+    }
+  }
+}
