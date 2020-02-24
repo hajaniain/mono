@@ -23,6 +23,13 @@
     },
     "feature": {
       "tags": []
+    },
+    "admin-mono": {
+      "tags": []
+    },
+    "admin-mono-e2e": {
+      "tags": [],
+      "implicitDependencies": ["admin-mono"]
     }
   }
 }
