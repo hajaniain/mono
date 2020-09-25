@@ -83,16 +83,14 @@
               "apps/ng-mono/tsconfig.app.json",
               "apps/ng-mono/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/ng-mono/**"]
+            "exclude": ["**/node_modules/**", "!apps/ng-mono/**/*"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "apps/ng-mono/jest.config.js",
-            "tsConfig": "apps/ng-mono/tsconfig.spec.json",
-            "passWithNoTests": true,
-            "setupFile": "apps/ng-mono/src/test-setup.ts"
+            "passWithNoTests": true
           }
         }
       }
@@ -119,7 +117,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": ["apps/ng-mono-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/ng-mono-e2e/**"]
+            "exclude": ["**/node_modules/**", "!apps/ng-mono-e2e/**/*"]
           }
         }
       }
@@ -137,16 +135,14 @@
               "libs/core/tsconfig.lib.json",
               "libs/core/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/core/**"]
+            "exclude": ["**/node_modules/**", "!libs/core/**/*"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/core/jest.config.js",
-            "tsConfig": "libs/core/tsconfig.spec.json",
-            "passWithNoTests": true,
-            "setupFile": "libs/core/src/test-setup.ts"
+            "passWithNoTests": true
           }
         }
       },
@@ -169,16 +165,14 @@
               "libs/feature/tsconfig.lib.json",
               "libs/feature/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/feature/**"]
+            "exclude": ["**/node_modules/**", "!libs/feature/**/*"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/feature/jest.config.js",
-            "tsConfig": "libs/feature/tsconfig.spec.json",
-            "passWithNoTests": true,
-            "setupFile": "libs/feature/src/test-setup.ts"
+            "passWithNoTests": true
           }
         }
       },
@@ -270,16 +264,14 @@
               "apps/admin-mono/tsconfig.app.json",
               "apps/admin-mono/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/admin-mono/**"]
+            "exclude": ["**/node_modules/**", "!apps/admin-mono/**/*"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "apps/admin-mono/jest.config.js",
-            "tsConfig": "apps/admin-mono/tsconfig.spec.json",
-            "passWithNoTests": true,
-            "setupFile": "apps/admin-mono/src/test-setup.ts"
+            "passWithNoTests": true
           }
         }
       }
@@ -306,7 +298,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": ["apps/admin-mono-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/admin-mono-e2e/**"]
+            "exclude": ["**/node_modules/**", "!apps/admin-mono-e2e/**/*"]
           }
         }
       }
