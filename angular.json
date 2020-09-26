@@ -25,7 +25,10 @@
               "apps/ng-mono/src/favicon.ico",
               "apps/ng-mono/src/assets"
             ],
-            "styles": ["apps/ng-mono/src/styles.scss"],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "apps/ng-mono/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -83,7 +86,10 @@
               "apps/ng-mono/tsconfig.app.json",
               "apps/ng-mono/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/ng-mono/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/ng-mono/**/*"
+            ]
           }
         },
         "test": {
@@ -116,8 +122,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/ng-mono-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/ng-mono-e2e/**/*"]
+            "tsConfig": [
+              "apps/ng-mono-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/ng-mono-e2e/**/*"
+            ]
           }
         }
       }
@@ -135,7 +146,10 @@
               "libs/core/tsconfig.lib.json",
               "libs/core/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/core/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/core/**/*"
+            ]
           }
         },
         "test": {
@@ -165,7 +179,10 @@
               "libs/feature/tsconfig.lib.json",
               "libs/feature/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/feature/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/feature/**/*"
+            ]
           }
         },
         "test": {
@@ -206,7 +223,9 @@
               "apps/admin-mono/src/favicon.ico",
               "apps/admin-mono/src/assets"
             ],
-            "styles": ["apps/admin-mono/src/styles.scss"],
+            "styles": [
+              "apps/admin-mono/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -264,7 +283,10 @@
               "apps/admin-mono/tsconfig.app.json",
               "apps/admin-mono/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/admin-mono/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/admin-mono/**/*"
+            ]
           }
         },
         "test": {
@@ -297,8 +319,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/admin-mono-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/admin-mono-e2e/**/*"]
+            "tsConfig": [
+              "apps/admin-mono-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/admin-mono-e2e/**/*"
+            ]
           }
         }
       }
@@ -316,7 +343,10 @@
               "libs/state/tsconfig.lib.json",
               "libs/state/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/state/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/state/**/*"
+            ]
           }
         },
         "test": {
