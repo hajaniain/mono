@@ -30,6 +30,9 @@
     "admin-mono-e2e": {
       "tags": [],
       "implicitDependencies": ["admin-mono"]
+    },
+    "state": {
+      "tags": []
     }
   },
   "tasksRunnerOptions": {

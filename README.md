@@ -8,10 +8,26 @@ Monorepo with Nx
 
 ## Generate a library
 
-    ng g @nrwl/angular:lib core
+    nx g @nrwl/angular:lib core
 
 Generate module in library
 
     cd libs/core
 
-    ng g module src/lib/hello
+    nx g module src/lib/hello
+
+
+## Miration update
+
+
+        nx migrate @nrwl/workspace
+
+        npm install
+
+        nx migrate --run-migrations=migrations.json
+
+
+## Ngrx
+
+
+        nx add @ngrx/store@latest --project state --module state.module.ts --minimal false

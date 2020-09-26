@@ -17,7 +17,8 @@
     "baseUrl": ".",
     "paths": {
       "@mono/core": ["libs/core/src/index.ts"],
-      "@mono/feature": ["libs/feature/src/index.ts"]
+      "@mono/feature": ["libs/feature/src/index.ts"],
+      "@mono/state": ["libs/state/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
